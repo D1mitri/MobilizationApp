@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MobilizationApp</string>
+
+    <string name="cover">Cover</string>
+    <string name="artists">Исполнители</string>
+    <string name="biography">Биография</string>
+    <string name="dot_operator">&#8901;</string>
+</resources>
