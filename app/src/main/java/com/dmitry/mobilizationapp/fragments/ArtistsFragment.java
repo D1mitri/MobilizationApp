@@ -166,9 +166,9 @@ public class ArtistsFragment extends Fragment {
             String genres = Arrays.toString(mArtist.getGenres()).replaceAll("\\[|\\]", "");
             tvGenre.setText(genres);
 
-            String albumsCount = String.valueOf(mArtist.getAlbums());
-            String tracksCount = String.valueOf(mArtist.getTracks());
-            tvAlbumsAndTracks.setText(albumsCount + " альбомов, " + tracksCount + " песен");
+            String albums = getActivity().getResources().getQuantityString(R.plurals.albums, mArtist.getAlbums(), mArtist.getAlbums());
+            String tracks = getActivity().getResources().getQuantityString(R.plurals.tracks, mArtist.getTracks(), mArtist.getTracks());
+            tvAlbumsAndTracks.setText(albums + ", " + tracks);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

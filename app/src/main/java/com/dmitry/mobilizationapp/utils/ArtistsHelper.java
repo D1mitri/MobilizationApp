@@ -39,4 +39,13 @@ public class ArtistsHelper {
         return mArtists;
     }
 
+    public Artist getArtist(long id) {
+        for (Artist artist : mArtists) {
+            if (artist.getId() == id) {
+                return artist;
+            }
+        }
+        return null;
+    }
+
 }
